@@ -8,6 +8,9 @@
     "terra",
     "leaflet",
     "dplyr",
-    "sf"
+    "sf",
+    "RColorBrewer",
+    "magrittr",
+    "jsonlite"
   ]
 }

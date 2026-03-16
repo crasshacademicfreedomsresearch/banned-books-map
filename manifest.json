@@ -1,8 +1,10 @@
 {
-  "primary_r_file": "app.R",
-  "type": "shiny",
+  "name": "Banned Books Map",
   "title": "Banned Books Map",
   "description": "Global interactive map of banned books",
+  "version": "1.0.0",
+  "primary_r_file": "app.R",
+  "type": "shiny",
   "packages": [
     "shiny",
     "terra",
@@ -12,5 +14,11 @@
     "RColorBrewer",
     "magrittr",
     "jsonlite"
+  ],
+  "authors": [
+    {
+      "name": "CRASSH Academic Freedoms Research",
+      "email": "crasshacademicfreedomsresearch@gmail.com"
+    }
   ]
 }

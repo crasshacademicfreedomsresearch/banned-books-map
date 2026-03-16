@@ -1,0 +1,58 @@
+---
+title: "Banned Book Website"
+author: "Selena Cai"
+date: "2025-11-28"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+```{R}
+library(shiny)
+library(leaflet)
+library(dplyr)
+library(googlesheets4)
+library(htmltools)
+library(tibble)
+library(rsconnect)
+
+```
+
+```{R}
+setwd("C:/Users/selen/OneDrive - University of Cambridge/R_Studio/website")
+
+list.files()
+
+```
+
+```{R}
+rsconnect::showLogs("BannedBooksMap")
+
+
+```
+
+
+```{R}
+
+library(rsconnect)
+rsconnect::setAccountInfo(
+  name='crasshacademicfreedoms',
+  token='25E4521455F70966DE8BAD8EB9DC4E79',
+  secret='ETgLs6ci6ktnDLjnGW5APVn5oqXhdALzVS7xsYT+'
+)
+
+rsconnect::deployApp(
+  appDir = "C:/Users/selen/OneDrive - University of Cambridge/R_Studio/website",
+  appName = "BannedBooksMap",
+  forceUpdate = TRUE,
+    launch.browser = FALSE,
+  lint = FALSE
+)
+
+```
+
+```

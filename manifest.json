@@ -1,0 +1,13 @@
+{
+  "primary_r_file": "app.R",
+  "type": "shiny",
+  "title": "Banned Books Map",
+  "description": "Global interactive map of banned books",
+  "packages": [
+    "shiny",
+    "terra",
+    "leaflet",
+    "dplyr",
+    "sf"
+  ]
+}

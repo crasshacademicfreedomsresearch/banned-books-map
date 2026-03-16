@@ -1,8 +1,10 @@
 {
-  "primary_r_file": "app.R",
-  "type": "shiny",
+  "name": "banned-books-map",
+  "version": "1.0.0",
   "title": "Banned Books Map",
   "description": "Global interactive map of banned books",
+  "type": "shiny",
+  "primary_r_file": "app.R",
   "packages": [
     "shiny",
     "terra",

@@ -1,3 +1,17 @@
+install.packages("terra")
+install.packages("shiny")
+install.packages("leaflet")
+install.packages("dplyr")
+install.packages("googlesheets4")
+install.packages("htmltools")
+install.packages("tibble")
+
+
+
+install.packages("rsconnect")   # once
+library(rsconnect)
+rsconnect::writeManifest()
+
 library(terra)
 terraOptions(tempdir = "/srv/shiny-server/temp")
 

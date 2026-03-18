@@ -12,6 +12,10 @@ install.packages("rsconnect")   # once
 library(rsconnect)
 rsconnect::writeManifest()
 
+git add manifest.json
+git commit -m "Add manifest for Connect Cloud"
+git push
+
 library(terra)
 terraOptions(tempdir = "/srv/shiny-server/temp")
 

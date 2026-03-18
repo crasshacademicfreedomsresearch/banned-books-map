@@ -9,6 +9,9 @@ library(googlesheets4)
 library(htmltools)
 library(tibble)
 
+install.packages("rsconnect") # if not already
+rsconnect::writeManifest()
+
 # ---------------------------
 # Google Sheet config
 # ---------------------------
